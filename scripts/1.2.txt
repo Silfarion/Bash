@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /home/student
+cd /home/ubuntu/Bash/scripts/
 rm toppage.txt
 rm topip.txt
 rm topip1.txt
@@ -8,7 +8,13 @@ rm timing.txt
 rm hours.txt
 rm tophour.txt
 rm bot.txt
-f=/home/student/apache_logs.txt
+rm iplist.txt
+f=/home/ubuntu/Bash/apache_logs.txt
+awk '{print $1}' $f | sort -n | uniq -c | sort -nrk1 >> iplist.txt
+ipadd=`head -n 1 iplist.txt | awk '{print $2}'`
+amount=`head -n 1 iplist.txt | awk '{print $1}'`
+echo IP address ${ipadd} has the bigest amount of requests "("${amount}")".
+echo Detail information about another adresses is available "in" file iplist.txt
 awk '{print $7}' $f |sort -n|uniq -c|sort -nrk1>>toppage.txt #task 1.2
 n=`head -n 1 toppage.txt | awk '{print $2}'`
 m=`head -n 1 toppage.txt | awk '{print $1}'`
@@ -20,5 +26,5 @@ grep -w error404 $f > error.txt #task 1.4
 awk '{print $4}' $f >> timing.txt
 awk -F ":" '{print $2}' timing.txt >> hours.txt
 awk '{print $0}'  hours.txt|sort -n|uniq -c|sort -nrk1 >> tophour.txt
-grep -i bot $f >>bot.txt
+grep -i bot $f >> bot.txt
 
