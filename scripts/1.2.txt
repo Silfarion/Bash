@@ -9,6 +9,7 @@ rm hours.txt
 rm tophour.txt
 rm bot.txt
 rm iplist.txt
+rm ipbotlist
 f=/home/ubuntu/Bash/apache_logs.txt
 awk '{print $1}' $f | sort -n | uniq -c | sort -nrk1 >> iplist.txt
 ipadd=`head -n 1 iplist.txt | awk '{print $2}'`
@@ -26,5 +27,4 @@ grep -w error404 $f > error.txt #task 1.4
 awk '{print $4}' $f >> timing.txt
 awk -F ":" '{print $2}' timing.txt >> hours.txt
 awk '{print $0}'  hours.txt|sort -n|uniq -c|sort -nrk1 >> tophour.txt
-grep -i bot $f >> bot.txt
-
+grep -i bot $f >> bot.txt | awk '{print $1}' bot.txt |sort -n| uniq -c| sort -nrk1 >> ipbotlist
