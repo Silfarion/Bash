@@ -1,0 +1,9 @@
+#!/bin/bash
+cd /home/student
+rm iplist.txt
+awk '{print $1}' apache_logs.txt | sort -n | uniq -c | sort -nrk1  >> iplist.txt
+n=`head -n 1 iplist.txt | awk '{print $2}'`
+m=`head -n 1 iplist.txt | awk '{print $1}'`
+echo IP address ${n} has the bigest amount of requests "("${m}")". 
+echo Detail information about another adresses is available "in" file iplist.txt
+

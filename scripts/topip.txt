@@ -1,0 +1,8 @@
+217.69.134.39 - - [30/Sep/2015:00:27:51 +0300] "GET /sitemap1.xml.gz HTTP/1.0" 304 - "-" "Mozilla/5.0 (compatible; Linux x86_64; Mail.RU_Bot/Fast/2.0; +http://go.mail.ru/help/robots)"
+217.69.134.15 - - [30/Sep/2015:00:46:33 +0300] "GET /sitemap1.xml.gz HTTP/1.0" 304 - "-" "Mozilla/5.0 (compatible; Linux x86_64; Mail.RU_Bot/Fast/2.0; +http://go.mail.ru/help/robots)"
+217.69.134.29 - - [30/Sep/2015:01:04:17 +0300] "GET /sitemap1.xml.gz HTTP/1.0" 304 - "-" "Mozilla/5.0 (compatible; Linux x86_64; Mail.RU_Bot/Fast/2.0; +http://go.mail.ru/help/robots)"
+217.69.134.11 - - [30/Sep/2015:01:20:36 +0300] "GET /sitemap1.xml.gz HTTP/1.0" 304 - "-" "Mozilla/5.0 (compatible; Linux x86_64; Mail.RU_Bot/Fast/2.0; +http://go.mail.ru/help/robots)"
+217.69.134.12 - - [30/Sep/2015:01:38:33 +0300] "GET /sitemap1.xml.gz HTTP/1.0" 304 - "-" "Mozilla/5.0 (compatible; Linux x86_64; Mail.RU_Bot/Fast/2.0; +http://go.mail.ru/help/robots)"
+66.249.69.39 - - [30/Sep/2015:01:40:20 +0300] "GET /sitemap1.xml.gz HTTP/1.0" 200 4631 "-" "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+217.69.134.13 - - [30/Sep/2015:01:57:09 +0300] "GET /sitemap1.xml.gz HTTP/1.0" 304 - "-" "Mozilla/5.0 (compatible; Linux x86_64; Mail.RU_Bot/Fast/2.0; +http://go.mail.ru/help/robots)"
+217.69.134.29 - - [30/Sep/2015:02:17:00 +0300] "GET /sitemap1.xml.gz HTTP/1.0" 304 - "-" "Mozilla/5.0 (compatible; Linux x86_64; Mail.RU_Bot/Fast/2.0; +http://go.mail.ru/help/robots)"

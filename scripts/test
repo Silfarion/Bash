@@ -1,0 +1,3 @@
+#!/bin/bash
+f=apache_logs.txt
+cat $f

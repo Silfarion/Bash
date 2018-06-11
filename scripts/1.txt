@@ -1,0 +1,8 @@
+#!/bin/bash
+cd /home/student
+rm iplist.txt
+awk '{print $1}' apache_logs.txt >> iplist.txt
+sort -n iplist.txt >> iplist.txt
+uniq -c iplist.txt >> iplist.txt
+#awk '{print $1}' iplist.txt | sort -n >> iplist.txt
+sort -n -r -k1 iplist.txt >> iplist.txt
